@@ -3,7 +3,7 @@ Title: Some Useful Functions for a Bayesian Statistician
 Version: 0.0.0.9001
 Authors@R: person("Dan", "Spencer", email = "daspence@ucsc.edu", role = c("aut", "cre"))
 Description: This package provides some of my often-used functions for quick loading. 
-Depends: R (>= 3.3.3)
+Depends: R (>= 3.1.0)
 License: Creative Commons 
 Encoding: UTF-8
 LazyData: true
