@@ -72,3 +72,25 @@ inv_gamma_params <- function(mean, var){
   rate <- mean*(shape - 1)
   c(shape,rate)
 }
+
+#' Gamma Parameters
+#' 
+#' This function gives  appropriate shape and rate parameters for a gamma distribution given a desired mean and variance
+#' @param mean Desired mean of the distribution
+#' @param var Desired variance of the distribution
+#' @keywords Gamma, hyperparameters
+#' @export
+#' @examples 
+#' > gamma_params(mean = 5, var = 3)
+#' [1] 8.333333 1.666667
+#' > mean(rgamma(1000,8.333333,1.666667))
+#' [1] 4.937651
+#' > var(rgamma(1000,8.333333,1.666667))
+#' [1] 3.172861
+
+gamma_params <- function(mean,var){
+  if(mean <= 0 || var <= 0) stop("Both the mean and the variance must be greater than zero!")
+  shape <- mean^2 / var 
+  rate <- mean / var
+  c(shape,rate)
+}

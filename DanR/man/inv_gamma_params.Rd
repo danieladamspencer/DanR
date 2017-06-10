@@ -25,3 +25,4 @@ var(1/rgamma(1000,6,10))
 \keyword{Gamma,}
 \keyword{Inverse}
 \keyword{hyperparameters}
+

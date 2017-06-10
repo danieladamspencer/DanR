@@ -22,3 +22,4 @@ gelfand_and_ghosh()
 \keyword{Bayesian}
 \keyword{Comparisons,}
 \keyword{Model}
+
