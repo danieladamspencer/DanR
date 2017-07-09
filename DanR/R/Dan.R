@@ -4,7 +4,7 @@
 # library(roxygen2) #devtools::install_github("klutometis/roxygen")
 # Navigate to directory containing this file
 # document()
-# setwd("../")
+# setwd("../../")
 # install("DanR")
 # library(DanR)
 
@@ -16,8 +16,8 @@
 #' @param obs This is an n-dimensional observation vector
 #' @keywords Model Comparisons, Bayesian
 #' @export
-#' @examples 
-#' gelfand_and_ghosh()
+#' @references Gelfand, Alan E., and Sujit K. Ghosh. "Model choice: a minimum posterior predictive loss approach." Biometrika 85.1 (1998): 1-11.
+#' 
 
 gelfand_and_ghosh <- function(k,preds,obs){
   if(nrow(preds) != length(obs)) return("You have to have an n by s prediction matrix corresponding to a length n vector of observations!")

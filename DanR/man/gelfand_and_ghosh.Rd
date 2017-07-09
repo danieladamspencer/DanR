@@ -16,10 +16,9 @@ gelfand_and_ghosh(k, preds, obs)
 \description{
 This function implements the Gelfand and Ghosh predictive loss criterion as proposed in 1998 by Alan Gelfand and Sujit Ghosh.
 }
-\examples{
-gelfand_and_ghosh()
+\references{
+Gelfand, Alan E., and Sujit K. Ghosh. "Model choice: a minimum posterior predictive loss approach." Biometrika 85.1 (1998): 1-11.
 }
 \keyword{Bayesian}
 \keyword{Comparisons,}
 \keyword{Model}
-

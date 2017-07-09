@@ -24,4 +24,3 @@ This function gives  appropriate shape and rate parameters for a gamma distribut
 }
 \keyword{Gamma,}
 \keyword{hyperparameters}
-

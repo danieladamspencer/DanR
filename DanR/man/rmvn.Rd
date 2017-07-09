@@ -24,4 +24,3 @@ rmvn(5,c(2,2),matrix(c(2,-1,-1,5),2,2))
 }
 \keyword{Gaussian,}
 \keyword{Normal}
-
