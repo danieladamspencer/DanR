@@ -6,9 +6,10 @@
 #' @param n The number of draws to make from the multivariate normal
 #'   distribution. Must be a positive integer.
 #' @param mu The mean vector of length p
-#' @param V The $p\times p$ covariance matrix
+#' @param V The p x p covariance matrix
 #' @keywords Gaussian, Normal
 #' @export
+#' @import stats
 #' @examples
 #' \dontrun{
 #' rmvn(5,c(2,2),matrix(c(2,-1,-1,5),2,2))
@@ -20,5 +21,5 @@ rmvn <- function(n,mu=0,V=matrix(1)){
   p <- length(mu)
   if(any(is.na(match(dim(V),p)))){stop("Dimension Problem!")}
   D <- chol(V)
-  t(matrix(rnorm(n*p),ncol=p)%*%D + rep(mu,rep(n,p)))
+  return(t(matrix(stats::rnorm(n*p),ncol=p)%*%D + rep(mu,rep(n,p))))
 }

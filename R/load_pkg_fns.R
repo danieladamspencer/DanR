@@ -7,7 +7,7 @@
 #'
 #' @return NULL
 #' @export
-#'
+#' @importFrom utils lsf.str
 #' @examples
 #' \dontrun{load_pkg_fns(BayesfMRI)}
 load_pkg_fns <- function(pkg_name) {
