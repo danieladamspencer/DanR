@@ -12,6 +12,6 @@
 #' \dontrun{load_pkg_fns(BayesfMRI)}
 load_pkg_fns <- function(pkg_name) {
   r <- unclass(lsf.str(envir = asNamespace(pkg_name), all = T))
-  for(name in r) eval(parse(text=paste0(name, '<-',pkg_name,':::', name)))
+  for(name in r) eval(parse(text=paste0(name, '<-',pkg_name,':::', name)),envir = .GlobalEnv)
   cat("All functions (visible and invisible) loaded for package:",pkg_name,"\n")
 }
